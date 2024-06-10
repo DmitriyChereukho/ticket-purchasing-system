@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: purchase-app
+
+  main:
+    banner-mode: "off"
+
+  datasource:
+    url: jdbc:postgresql://ticket-purchasing-system-db:5432/postgres
+    username: postgres
+    password: postgres
