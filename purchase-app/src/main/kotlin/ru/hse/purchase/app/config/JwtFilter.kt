@@ -10,7 +10,6 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
 import org.springframework.web.reactive.function.client.WebClient
-import reactor.netty.Metrics.updateContext
 
 @Component
 class JwtFilter(

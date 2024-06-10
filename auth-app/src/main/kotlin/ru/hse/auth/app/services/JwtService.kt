@@ -3,19 +3,16 @@ package ru.hse.auth.app.services
 import io.jsonwebtoken.Claims
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.security.Keys
-import org.springframework.http.HttpStatus
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.stereotype.Service
-import org.springframework.web.server.ResponseStatusException
 import ru.hse.auth.app.config.JwtProperties
 import java.util.*
 
 @Service
 class JwtService(
     jwtProperties: JwtProperties,
-    private val userDetailsService: AuthUserDetailsService,
-    private val userService: UserService
+    private val userDetailsService: AuthUserDetailsService
 ) {
     private val secretKey = Keys.hmacShaKeyFor(jwtProperties.key.toByteArray())
 
