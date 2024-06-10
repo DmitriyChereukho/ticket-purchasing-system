@@ -1,0 +1,8 @@
+---
+databaseChangeLog:
+  - include:
+      file: stations.sql
+      relativeToChangelogFile: true
+  - include:
+      file: orders.sql
+      relativeToChangelogFile: true
